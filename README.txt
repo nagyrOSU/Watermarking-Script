@@ -1,15 +1,22 @@
 ******************************************************
-* watermark.exe
+* watermark.py / watermark.exe
 * Created by: Rene Nagy
 ******************************************************
 
-This repo contains the watermark.py script and the same script converted to a windows executable.
+A simple script to dynamically resize a logo image and paste it on top of other images. Because it resizes dynamically, it is great for
+watermarking many images en masse. Allows user input for the watermark location, opacity, and size.
 
-The watermark.exe executable is an executable file to automatically watermark images 
+This repo contains the watermark.py script and the same script converted to a windows executable, both with the same functionality.
 
-It works on windows machines, and requires no dependancies other than the visual c++ redistributable (I think...)
+The executable only works on windows machines, but requires no dependancies other than the visual c++ redistributable (I think...)
 
-To use it, simply run the executable and it will ask for user input to watermark images as desired
+Below are much more in depth instructions. If you are familiar with technology / programming this script's user input instructions should
+be sufficient. If more details are necessary, see below.
+
+*************** EXTENDED INSTRUCTIONS ********************
+
+
+To use it, simply run the executable or python script and it will ask for user input to watermark images as desired
 
 First, it will ask you to enter "custom" to run with custom parameters for logo location, opacity, and size, 
 or to enter nothing (just press enter) to continue with default postion, opacity, and logo
@@ -35,7 +42,6 @@ The proper inputs for the logo file path, image folder path, and saved image fol
 ***IMPORTANT***
 As shown above, you must add the extention (i.e. '.png') to the end of the logo filename. 
 Otherwise it won't be able to find the file. Yes, image_name WILL NOT WORK. image_name.png or image_name.jpg (depending on the file) will work!
-
 
 
 If in custom mode, the program will also ask for a location to add the watermark (the corners or the center, with default of bottomright),
